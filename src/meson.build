@@ -162,7 +162,7 @@ if get_option('unittest')
 	test('picom unittest', picom, args: ['--unittest'])
 endif
 
-install_symlink('picom-inspect', install_dir: 'bin', pointing_to: 'picom')
+#install_symlink('picom-inspect', install_dir: 'bin', pointing_to: 'picom')
 
 if cc.has_argument('-fsanitize=fuzzer')
 	c2_fuzz = executable(
